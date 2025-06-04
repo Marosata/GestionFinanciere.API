@@ -48,3 +48,4 @@ C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\obj\Debug\net9.0\r
 C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\obj\Debug\net9.0\GestionFinanciere.API.sourcelink.json
