@@ -32,9 +32,7 @@ namespace GestionFinanciere.API.Controllers
             _logger = logger;
         }
         
-        /// <summary>
         /// Inscription d'un nouvel utilisateur
-        /// </summary>
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDto model)
         {
@@ -108,9 +106,7 @@ namespace GestionFinanciere.API.Controllers
             }
         }
         
-        /// <summary>
         /// Connexion d'un utilisateur
-        /// </summary>
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto model)
         {
@@ -170,9 +166,7 @@ namespace GestionFinanciere.API.Controllers
             }
         }
         
-        /// <summary>
         /// Obtenir les informations de l'utilisateur connecté
-        /// </summary>
         [HttpGet("me")]
         [Authorize]
         public async Task<IActionResult> GetCurrentUser()
@@ -213,9 +207,7 @@ namespace GestionFinanciere.API.Controllers
             }
         }
         
-        /// <summary>
         /// Changer le mot de passe de l'utilisateur connecté
-        /// </summary>
         [HttpPost("change-password")]
         [Authorize]
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto model)
@@ -256,9 +248,7 @@ namespace GestionFinanciere.API.Controllers
             }
         }
         
-        /// <summary>
         /// Déconnexion (côté client, le token sera simplement supprimé)
-        /// </summary>
         [HttpPost("logout")]
         [Authorize]
         public IActionResult Logout()
@@ -271,9 +261,7 @@ namespace GestionFinanciere.API.Controllers
             return Ok(new { message = "Déconnexion réussie." });
         }
         
-        /// <summary>
         /// Méthode helper pour s'assurer qu'un rôle existe
-        /// </summary>
         private async Task EnsureRoleExists(string roleName)
         {
             if (!await _roleManager.RoleExistsAsync(roleName))

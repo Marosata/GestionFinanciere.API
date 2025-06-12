@@ -4,9 +4,7 @@ namespace GestionFinanciere.API.Helpers
 {
     public static class ValidationHelper
     {
-        /// <summary>
         /// Valide un format de couleur hexadécimal
-        /// </summary>
         public static bool IsValidHexColor(string color)
         {
             if (string.IsNullOrWhiteSpace(color))
@@ -18,17 +16,13 @@ namespace GestionFinanciere.API.Helpers
             return Regex.IsMatch(color, @"^#[0-9A-Fa-f]{6}$");
         }
 
-        /// <summary>
         /// Valide un montant (doit être positif)
-        /// </summary>
         public static bool IsValidAmount(decimal amount)
         {
             return amount > 0;
         }
 
-        /// <summary>
         /// Valide une description (longueur max et contenu)
-        /// </summary>
         public static bool IsValidDescription(string? description, int maxLength = 500)
         {
             if (string.IsNullOrEmpty(description))
@@ -41,9 +35,7 @@ namespace GestionFinanciere.API.Helpers
             return !ContainsDangerousCharacters(description);
         }
 
-        /// <summary>
         /// Valide un nom (obligatoire, longueur max)
-        /// </summary>
         public static bool IsValidName(string name, int maxLength = 100)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -55,9 +47,7 @@ namespace GestionFinanciere.API.Helpers
             return !ContainsDangerousCharacters(name);
         }
 
-        /// <summary>
         /// Valide un email
-        /// </summary>
         public static bool IsValidEmail(string email)
         {
             if (string.IsNullOrWhiteSpace(email))
@@ -74,23 +64,19 @@ namespace GestionFinanciere.API.Helpers
             }
         }
 
-        /// <summary>
         /// Valide une date (ne doit pas être dans un futur trop lointain)
-        /// </summary>
         public static bool IsValidTransactionDate(DateTime date)
         {
             // La date ne peut pas être dans plus de 24h dans le futur
             var maxFutureDate = DateTime.Now.AddDays(1);
             
             // La date ne peut pas être antérieure à 1900
-            var minDate = new DateTime(1900, 1, 1);
+            var minDate = new DateTime(2010, 1, 1);
 
             return date >= minDate && date <= maxFutureDate;
         }
 
-        /// <summary>
         /// Vérifie la présence de caractères potentiellement dangereux
-        /// </summary>
         private static bool ContainsDangerousCharacters(string input)
         {
             if (string.IsNullOrEmpty(input))
@@ -103,9 +89,7 @@ namespace GestionFinanciere.API.Helpers
             return dangerousPatterns.Any(pattern => upperInput.Contains(pattern.ToUpperInvariant()));
         }
 
-        /// <summary>
         /// Sanitise une chaîne de caractères
-        /// </summary>
         public static string SanitizeString(string input)
         {
             if (string.IsNullOrEmpty(input))
@@ -118,17 +102,13 @@ namespace GestionFinanciere.API.Helpers
             return input;
         }
 
-        /// <summary>
         /// Valide un ID (doit être positif)
-        /// </summary>
         public static bool IsValidId(int id)
         {
             return id > 0;
         }
 
-        /// <summary>
         /// Valide un GUID d'utilisateur
-        /// </summary>
         public static bool IsValidUserId(string userId)
         {
             return !string.IsNullOrWhiteSpace(userId);

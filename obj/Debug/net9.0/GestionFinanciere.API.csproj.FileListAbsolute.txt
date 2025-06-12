@@ -49,3 +49,9 @@ C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\bin\Debug\net9.0\S
 C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\obj\Debug\net9.0\GestionFinanciere.API.sourcelink.json
+C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\bin\Debug\net9.0\publish\web.config
+C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\bin\Debug\net9.0\publish\appsettings.Development.json
+C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\bin\Debug\net9.0\publish\appsettings.json
+C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\bin\Debug\net9.0\publish\GestionFinanciere.API.deps.json
+C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\bin\Debug\net9.0\publish\GestionFinanciere.API.runtimeconfig.json
+C:\Users\USER\Desktop\GestionFinanciere\GestionFinanciere.API\bin\Debug\net9.0\publish\GestionFinanciere.API.staticwebassets.endpoints.json
