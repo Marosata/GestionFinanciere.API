@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "GestionFinanciere.API/1.0.0": {
         "dependencies": {
-          "CsvHelper": "30.0.1",
+          "CsvHelper": "33.1.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.5",
@@ -24,11 +24,11 @@
           "GestionFinanciere.API.dll": {}
         }
       },
-      "CsvHelper/30.0.1": {
+      "CsvHelper/33.1.0": {
         "runtime": {
-          "lib/net6.0/CsvHelper.dll": {
-            "assemblyVersion": "30.0.0.0",
-            "fileVersion": "30.0.1.0"
+          "lib/net9.0/CsvHelper.dll": {
+            "assemblyVersion": "33.0.0.0",
+            "fileVersion": "33.1.0.26"
           }
         }
       },
@@ -409,12 +409,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CsvHelper/30.0.1": {
+    "CsvHelper/33.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rcZtgbWR+As4G3Vpgx0AMNmShGuQLFjkHAPIIflzrfkJCx8/AOd4m96ZRmiU1Wi39qS5UVjV0P8qdgqOo5Cwyg==",
-      "path": "csvhelper/30.0.1",
-      "hashPath": "csvhelper.30.0.1.nupkg.sha512"
+      "sha512": "sha512-kqfTOZGrn7NarNeXgjh86JcpTHUoeQDMB8t9NVa/ZtlSYiV1rxfRnQ49WaJsob4AiGrbK0XDzpyKkBwai4F8eg==",
+      "path": "csvhelper/33.1.0",
+      "hashPath": "csvhelper.33.1.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
