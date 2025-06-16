@@ -68,6 +68,8 @@ builder.Services.AddAuthentication(options =>
 
 // Ajout des services personnalisés
 builder.Services.AddScoped<JwtService>();
+builder.Services.AddScoped<IExportService, ExportService>();
+builder.Services.AddScoped<INotificationService, NotificationService>();
 
 // Configuration CORS
 builder.Services.AddCors(options =>

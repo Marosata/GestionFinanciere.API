@@ -53,7 +53,7 @@
           "dependencies": {
             "CsvHelper": {
               "target": "Package",
-              "version": "[30.0.1, )"
+              "version": "[33.1.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
